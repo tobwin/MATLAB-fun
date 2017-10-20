@@ -12,11 +12,11 @@ if nargin == 1
 elseif nargin == 2
     if length(k) == 1
         R = eye(3);
-        L = find(~ismember(1:3,k));
-        R(L(1),L(1)) = cos(theta);
-        R(L(2),L(2)) = cos(theta);
-        R(L(1),L(2)) = -sin(theta);
-        R(L(2),L(1)) = sin(theta);
+        idx = find(~ismember(1:3,k));
+        R(idx(1),idx(1)) = cos(theta);
+        R(idx(2),idx(2)) = cos(theta);
+        R(idx(1),idx(2)) = -sin(theta);
+        R(idx(2),idx(1)) = sin(theta);
     elseif length(k) == 3
         u = k/norm(k);
         c = cos(theta); c1 = 1-c ; s = sin(theta);
