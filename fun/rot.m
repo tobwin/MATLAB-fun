@@ -3,6 +3,9 @@ function [R] = rot(theta,k)
 %   rot(theta) returns a 2D rotation matrix
 %   rot(theta,k) returns a 3D rotation matrix, rotating about the k-th axis
 %   rot(theta,v) returns a 3D rotation matrix, rotating about the vector v
+%
+% Tobias Winner, 20.10.2017
+% email: winner.tobias@gmail.com
 
 if nargin == 1
     R = [cos(theta) -sin(theta);sin(theta) cos(theta)];
