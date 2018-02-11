@@ -1,2 +1,2 @@
 # MATLAB-fun
-Functions that I use routinely 
+Lots of fun!
