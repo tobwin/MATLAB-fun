@@ -1,4 +1,4 @@
-function [N,c,ci] = gprod(N1,N2,varargin)
+function [N,c] = gprod(N1,N2,varargin)
 % gprod: product of multivariate normal pdfs
 %
 %     [N,c] = gprod(N1,N2,N3,...Nk) with inputs N1 = MVN(mu1,Sigma1), ..., Nk = MVN(muk,Sigmak)
@@ -22,7 +22,6 @@ c = (2*pi)^(-d/2) * det(S)^(1/2) * det(N1.Sigma)^(-1/2) * det(N2.Sigma)^(-1/2) *
 
 if nargin > 2
     [N,c(2)] = gprod(N,varargin{:});
-    ci = c;
     c = prod(c);
 end
 
