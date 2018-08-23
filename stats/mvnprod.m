@@ -1,7 +1,7 @@
 function [N,c] = mvnprod(N1,N2,varargin)
-% gprod: product of multivariate normal pdfs
+% mvnprod: product of multivariate normal pdfs
 %
-%     [N,c] = gprod(N1,N2,N3,...Nk) with inputs N1 = MVN(mu1,Sigma1), ..., Nk = MVN(muk,Sigmak)
+%     [N,c] = mvnprod(N1,N2,N3,...Nk) with inputs N1 = MVN(mu1,Sigma1), ..., Nk = MVN(muk,Sigmak)
 %             returns N = MVN(mu,Sigma) together with the constant c such that
 %             c * MVN(x|mu,Sigma) = MVN(x|mu1,Sigma1) * ... * MVN(x|muk,Sigmak).
 %
