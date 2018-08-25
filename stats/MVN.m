@@ -25,8 +25,11 @@ classdef MVN < matlab.mixin.Copyable
 % Tobias Winner, 20.08.2018
 % email: winner.tobias@gmail.com
 
-    properties
+    properties ( SetAccess=private )
         dim
+    end
+    
+    properties
         mean
         cov
     end
