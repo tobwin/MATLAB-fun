@@ -1,5 +1,5 @@
 function M = skron(A,B)
-% skron(A,B) returns the symmetric Kronecker product for two square nxn matrices A and B.
+% skron(A,B) returns the symmetric Kronecker product for two n x n matrices A and B.
 %
 % Credit goes to David Goodmanson whose original code can be found at 
 %   https://nl.mathworks.com/matlabcentral/answers/361452-symmetric-kronecker-product-in-matlab
