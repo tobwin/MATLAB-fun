@@ -4,7 +4,7 @@ function M = skron(A,B)
 % Credit goes to David Goodmanson whose original code can be found at 
 %   https://nl.mathworks.com/matlabcentral/answers/361452-symmetric-kronecker-product-in-matlab
 
-n = size(A,1)
+n = size(A,1);
 U = eye(n^2);
 a = reshape(1:n^2,n,n);
 b = a';
