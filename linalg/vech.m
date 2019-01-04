@@ -4,6 +4,6 @@ function x = vech(X)
 
 assert(all(all(X==X')), 'X must be symmetric.')
 
-x = X(triu(true(size(X))));
+x = X(tril(true(size(X))));
 
 end
